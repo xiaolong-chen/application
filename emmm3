@@ -5,125 +5,93 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: RackNerd_美国, server: emmm.xiaolong.world, port: 5555, type: trojan, password: Y1NE1HMxLh5Tm7Vk, sni: emmm.xiaolong.world, skip-cert-verify: true, udp: true}
-  - {name: ArmOracle_韩国, server: a.o.xiaolong.world, port: 5555, type: trojan, password: k9KAs6QYuv1G21vp, sni: a.o.xiaolong.world, skip-cert-verify: true, udp: true}
-  - {name: glitch_美国_cf, server: glitch.chenlan.top, port: 443, type: vmess, uuid: 7eea1139-79f8-45cb-8515-0ba45fa04eb2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: glitch.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: glitch.chenlan.top}}, udp: true}
-  - {name: glitch01_美国_cf, server: glitch01.chenlan.top, port: 443, type: vmess, uuid: 1a46873a-3698-48f9-8f85-172c8c22a896, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: glitch01.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: glitch01.chenlan.top}}, udp: true}
-  - {name: glitch02_美国_cf, server: glitch02.chenlan.top, port: 443, type: vmess, uuid: 8da97b2a-e5ad-47c6-9884-9ffd52360a13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: glitch02.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: glitch02.chenlan.top}}, udp: true}
-  - {name: glitch03_美国_cf, server: glitch03.chenlan.top, port: 443, type: vmess, uuid: 41f172df-da84-4439-91cf-ddefcd250c77, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: glitch03.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: glitch03.chenlan.top}}, udp: true}
-  - {name: render_新加坡_cf, server: render.chenlan.top, port: 443, type: vmess, uuid: 7eea1139-79f8-45cb-8515-0ba45fa04eb2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render.chenlan.top}}, udp: true}
-  - {name: render01_美国西部_cf, server: render01.chenlan.top, port: 443, type: vmess, uuid: 1a46873a-3698-48f9-8f85-172c8c22a896, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render01.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render01.chenlan.top}}, udp: true}
-  - {name: render02_欧盟中央_cf, server: render02.chenlan.top, port: 443, type: vmess, uuid: 8da97b2a-e5ad-47c6-9884-9ffd52360a13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render02.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render02.chenlan.top}}, udp: true}
-  - {name: render03_美国东部_cf, server: render03.chenlan.top, port: 443, type: vmess, uuid: 41f172df-da84-4439-91cf-ddefcd250c77, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render03.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render03.chenlan.top}}, udp: true}
+  - {name: RackNerd_圣何塞, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 334b772a-a979-46da-a698-4b90c428959d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: freedom.chenlan.top, network: ws, ws-opts: {path: "/feef8b3c6f?ed=2048", headers: {Host: freedom.chenlan.top}}, udp: true}
+  - {name: RackNerd_芝加哥, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 0f73f90f-6b6a-4bfc-aa7b-3b6321ebc63d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.chenlan.top, network: ws, ws-opts: {path: "/35d5ef49ce?ed=2048", headers: {Host: www.chenlan.top}}, udp: true}
+  - {name: render01_美国西部, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 1a46873a-3698-48f9-8f85-172c8c22a896, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render01.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render01.chenlan.top}}, udp: true}
+  - {name: render02_欧盟中央, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 8da97b2a-e5ad-47c6-9884-9ffd52360a13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render02.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render02.chenlan.top}}, udp: true}
+  - {name: render03_美国东部, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 41f172df-da84-4439-91cf-ddefcd250c77, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render03.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render03.chenlan.top}}, udp: true}
+  - {name: render_新加坡, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 7eea1139-79f8-45cb-8515-0ba45fa04eb2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render.chenlan.top}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - RackNerd_美国
-      - ArmOracle_韩国
-      - glitch_美国_cf
-      - glitch01_美国_cf
-      - glitch02_美国_cf
-      - glitch03_美国_cf
-      - render_新加坡_cf
-      - render01_美国西部_cf
-      - render02_欧盟中央_cf
-      - render03_美国东部_cf
+      - RackNerd_圣何塞
+      - RackNerd_芝加哥
+      - render01_美国西部
+      - render02_欧盟中央
+      - render03_美国东部
+      - render_新加坡
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - RackNerd_美国
-      - ArmOracle_韩国
-      - glitch_美国_cf
-      - glitch01_美国_cf
-      - glitch02_美国_cf
-      - glitch03_美国_cf
-      - render_新加坡_cf
-      - render01_美国西部_cf
-      - render02_欧盟中央_cf
-      - render03_美国东部_cf
+      - RackNerd_圣何塞
+      - RackNerd_芝加哥
+      - render01_美国西部
+      - render02_欧盟中央
+      - render03_美国东部
+      - render_新加坡
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RackNerd_美国
-      - ArmOracle_韩国
-      - glitch_美国_cf
-      - glitch01_美国_cf
-      - glitch02_美国_cf
-      - glitch03_美国_cf
-      - render_新加坡_cf
-      - render01_美国西部_cf
-      - render02_欧盟中央_cf
-      - render03_美国东部_cf
+      - RackNerd_圣何塞
+      - RackNerd_芝加哥
+      - render01_美国西部
+      - render02_欧盟中央
+      - render03_美国东部
+      - render_新加坡
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - RackNerd_美国
-      - ArmOracle_韩国
-      - glitch_美国_cf
-      - glitch01_美国_cf
-      - glitch02_美国_cf
-      - glitch03_美国_cf
-      - render_新加坡_cf
-      - render01_美国西部_cf
-      - render02_欧盟中央_cf
-      - render03_美国东部_cf
+      - RackNerd_圣何塞
+      - RackNerd_芝加哥
+      - render01_美国西部
+      - render02_欧盟中央
+      - render03_美国东部
+      - render_新加坡
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - RackNerd_美国
-      - ArmOracle_韩国
-      - glitch_美国_cf
-      - glitch01_美国_cf
-      - glitch02_美国_cf
-      - glitch03_美国_cf
-      - render_新加坡_cf
-      - render01_美国西部_cf
-      - render02_欧盟中央_cf
-      - render03_美国东部_cf
+      - RackNerd_圣何塞
+      - RackNerd_芝加哥
+      - render01_美国西部
+      - render02_欧盟中央
+      - render03_美国东部
+      - render_新加坡
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - RackNerd_美国
-      - ArmOracle_韩国
-      - glitch_美国_cf
-      - glitch01_美国_cf
-      - glitch02_美国_cf
-      - glitch03_美国_cf
-      - render_新加坡_cf
-      - render01_美国西部_cf
-      - render02_欧盟中央_cf
-      - render03_美国东部_cf
+      - RackNerd_圣何塞
+      - RackNerd_芝加哥
+      - render01_美国西部
+      - render02_欧盟中央
+      - render03_美国东部
+      - render_新加坡
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RackNerd_美国
-      - ArmOracle_韩国
-      - glitch_美国_cf
-      - glitch01_美国_cf
-      - glitch02_美国_cf
-      - glitch03_美国_cf
-      - render_新加坡_cf
-      - render01_美国西部_cf
-      - render02_欧盟中央_cf
-      - render03_美国东部_cf
+      - RackNerd_圣何塞
+      - RackNerd_芝加哥
+      - render01_美国西部
+      - render02_欧盟中央
+      - render03_美国东部
+      - render_新加坡
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,16 +114,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RackNerd_美国
-      - ArmOracle_韩国
-      - glitch_美国_cf
-      - glitch01_美国_cf
-      - glitch02_美国_cf
-      - glitch03_美国_cf
-      - render_新加坡_cf
-      - render01_美国西部_cf
-      - render02_欧盟中央_cf
-      - render03_美国东部_cf
+      - RackNerd_圣何塞
+      - RackNerd_芝加哥
+      - render01_美国西部
+      - render02_欧盟中央
+      - render03_美国东部
+      - render_新加坡
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
