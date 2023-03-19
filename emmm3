@@ -5,93 +5,101 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: RackNerd_圣何塞, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 334b772a-a979-46da-a698-4b90c428959d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: freedom.chenlan.top, network: ws, ws-opts: {path: "/feef8b3c6f?ed=2048", headers: {Host: freedom.chenlan.top}}, udp: true}
   - {name: RackNerd_芝加哥, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 0f73f90f-6b6a-4bfc-aa7b-3b6321ebc63d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.chenlan.top, network: ws, ws-opts: {path: "/35d5ef49ce?ed=2048", headers: {Host: www.chenlan.top}}, udp: true}
-  - {name: render01_美国西部, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 1a46873a-3698-48f9-8f85-172c8c22a896, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render01.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render01.chenlan.top}}, udp: true}
-  - {name: render02_欧盟中央, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 8da97b2a-e5ad-47c6-9884-9ffd52360a13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render02.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render02.chenlan.top}}, udp: true}
-  - {name: render03_美国东部, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 41f172df-da84-4439-91cf-ddefcd250c77, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render03.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render03.chenlan.top}}, udp: true}
+  - {name: RackNerd_圣何塞, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 334b772a-a979-46da-a698-4b90c428959d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: freedom.chenlan.top, network: ws, ws-opts: {path: "/feef8b3c6f?ed=2048", headers: {Host: freedom.chenlan.top}}, udp: true}
+  - {name: Oracle_韩国, server: cf.xiaolong.world, port: 443, type: vmess, uuid: b227726b-d76b-40cd-92cd-3beb81b93439, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: freedom1.chenlan.top, network: ws, ws-opts: {path: "/b6d317eb90?ed=2048", headers: {Host: freedom1.chenlan.top}}, udp: true}
   - {name: render_新加坡, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 7eea1139-79f8-45cb-8515-0ba45fa04eb2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render.chenlan.top}}, udp: true}
+  - {name: render_美国西部, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 1a46873a-3698-48f9-8f85-172c8c22a896, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render01.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render01.chenlan.top}}, udp: true}
+  - {name: render_欧盟中央, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 8da97b2a-e5ad-47c6-9884-9ffd52360a13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render02.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render02.chenlan.top}}, udp: true}
+  - {name: render_美国东部, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 41f172df-da84-4439-91cf-ddefcd250c77, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: render03.chenlan.top, network: ws, ws-opts: {path: /vmess, headers: {Host: render03.chenlan.top}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - RackNerd_圣何塞
       - RackNerd_芝加哥
-      - render01_美国西部
-      - render02_欧盟中央
-      - render03_美国东部
+      - RackNerd_圣何塞
+      - Oracle_韩国
       - render_新加坡
+      - render_美国西部
+      - render_欧盟中央
+      - render_美国东部
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - RackNerd_圣何塞
       - RackNerd_芝加哥
-      - render01_美国西部
-      - render02_欧盟中央
-      - render03_美国东部
+      - RackNerd_圣何塞
+      - Oracle_韩国
       - render_新加坡
+      - render_美国西部
+      - render_欧盟中央
+      - render_美国东部
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RackNerd_圣何塞
       - RackNerd_芝加哥
-      - render01_美国西部
-      - render02_欧盟中央
-      - render03_美国东部
+      - RackNerd_圣何塞
+      - Oracle_韩国
       - render_新加坡
+      - render_美国西部
+      - render_欧盟中央
+      - render_美国东部
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - RackNerd_圣何塞
       - RackNerd_芝加哥
-      - render01_美国西部
-      - render02_欧盟中央
-      - render03_美国东部
+      - RackNerd_圣何塞
+      - Oracle_韩国
       - render_新加坡
+      - render_美国西部
+      - render_欧盟中央
+      - render_美国东部
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - RackNerd_圣何塞
       - RackNerd_芝加哥
-      - render01_美国西部
-      - render02_欧盟中央
-      - render03_美国东部
+      - RackNerd_圣何塞
+      - Oracle_韩国
       - render_新加坡
+      - render_美国西部
+      - render_欧盟中央
+      - render_美国东部
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - RackNerd_圣何塞
       - RackNerd_芝加哥
-      - render01_美国西部
-      - render02_欧盟中央
-      - render03_美国东部
+      - RackNerd_圣何塞
+      - Oracle_韩国
       - render_新加坡
+      - render_美国西部
+      - render_欧盟中央
+      - render_美国东部
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RackNerd_圣何塞
       - RackNerd_芝加哥
-      - render01_美国西部
-      - render02_欧盟中央
-      - render03_美国东部
+      - RackNerd_圣何塞
+      - Oracle_韩国
       - render_新加坡
+      - render_美国西部
+      - render_欧盟中央
+      - render_美国东部
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -114,12 +122,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RackNerd_圣何塞
       - RackNerd_芝加哥
-      - render01_美国西部
-      - render02_欧盟中央
-      - render03_美国东部
+      - RackNerd_圣何塞
+      - Oracle_韩国
       - render_新加坡
+      - render_美国西部
+      - render_欧盟中央
+      - render_美国东部
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
