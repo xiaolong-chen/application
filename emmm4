@@ -7,8 +7,8 @@ external-controller: :9090
 proxies:
   - {name: RackNerd_芝加哥, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 0f73f90f-6b6a-4bfc-aa7b-3b6321ebc63d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.chenlan.top, network: ws, ws-opts: {path: "/35d5ef49ce?ed=2048", headers: {Host: www.chenlan.top}}, udp: true}
   - {name: RackNerd_圣何塞, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 334b772a-a979-46da-a698-4b90c428959d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: freedom.chenlan.top, network: ws, ws-opts: {path: "/feef8b3c6f?ed=2048", headers: {Host: freedom.chenlan.top}}, udp: true}
-  - {name: RackNerd_芝加哥_6, server: cf6.xiaolong.world, port: 443, type: vmess, uuid: 0f73f90f-6b6a-4bfc-aa7b-3b6321ebc63d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.chenlan.top, network: ws, ws-opts: {path: "/35d5ef49ce?ed=2048", headers: {Host: www.chenlan.top}}, udp: true}
-  - {name: RackNerd_圣何塞_6, server: cf6.xiaolong.world, port: 443, type: vmess, uuid: 334b772a-a979-46da-a698-4b90c428959d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: freedom.chenlan.top, network: ws, ws-opts: {path: "/feef8b3c6f?ed=2048", headers: {Host: freedom.chenlan.top}}, udp: true}
+  - {name: RackNerd_芝加哥6, server: cf6.xiaolong.world, port: 443, type: vmess, uuid: 0f73f90f-6b6a-4bfc-aa7b-3b6321ebc63d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.chenlan.top, network: ws, ws-opts: {path: "/35d5ef49ce?ed=2048", headers: {Host: www.chenlan.top}}, udp: true}
+  - {name: RackNerd_圣何塞6, server: cf6.xiaolong.world, port: 443, type: vmess, uuid: 334b772a-a979-46da-a698-4b90c428959d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: freedom.chenlan.top, network: ws, ws-opts: {path: "/feef8b3c6f?ed=2048", headers: {Host: freedom.chenlan.top}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
