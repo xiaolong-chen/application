@@ -8,6 +8,8 @@ proxies:
   - {name: RackNerd_芝加哥, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 0f73f90f-6b6a-4bfc-aa7b-3b6321ebc63d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.chenlan.top, network: ws, ws-opts: {path: "/35d5ef49ce?ed=2048", headers: {Host: www.chenlan.top}}, udp: true}
   - {name: RackNerd_西雅图, server: cf.xiaolong.world, port: 443, type: vmess, uuid: 96d73505-f5a4-45cf-ad9e-d4ed6bafab27, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: freedom2.chenlan.top, network: ws, ws-opts: {path: "/6b95104d5f?ed=2048", headers: {Host: freedom2.chenlan.top}}, udp: true}
   - {name: Oracle_韩国, server: cf.xiaolong.world, port: 443, type: vmess, uuid: b227726b-d76b-40cd-92cd-3beb81b93439, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: freedom1.chenlan.top, network: ws, ws-opts: {path: "/b6d317eb90?ed=2048", headers: {Host: freedom1.chenlan.top}}, udp: true}
+  - {name: cf_chenxl, server: cf.xiaolong.world, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, client-fingerprint: randomized, tfo: false, servername: cf.chenlan.top, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: cf.chenlan.top}}}
+  - {name: cf_game1, server: cf.xiaolong.world, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, client-fingerprint: randomized, tfo: false, servername: game1.xiaolongworld.cloudns.biz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: game1.xiaolongworld.cloudns.biz}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
