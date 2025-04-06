@@ -189,7 +189,7 @@ module.exports = {
     author: 'xiaolong改(猫头猫)',
     version: "0.0.1",
     supportedSearchType: ["music"],
-    srcUrl: "https://gh.chenlan.top/https://raw.githubusercontent.com/xiaolong-chen/application/refs/heads/master/youtube.js",
+    srcUrl: "https://proxy.chenlan.top/default/https/raw.githubusercontent.com/xiaolong-chen/application/refs/heads/master/youtube.js",
     cacheControl: "no-cache",
     search,
     getMediaSource,
