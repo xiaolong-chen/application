@@ -186,10 +186,10 @@ async function getMediaSource(musicItem, quality) {
 }
 module.exports = {
     platform: "Youtube",
-    author: '猫头猫',
+    author: 'xiaolong改(猫头猫)',
     version: "0.0.1",
     supportedSearchType: ["music"],
-    srcUrl: "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/youtube/index.js",
+    srcUrl: "https://gh.chenlan.top/https://raw.githubusercontent.com/xiaolong-chen/application/refs/heads/master/youtube.js",
     cacheControl: "no-cache",
     search,
     getMediaSource,
